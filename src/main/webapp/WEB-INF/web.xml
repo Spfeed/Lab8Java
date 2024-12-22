@@ -1,0 +1,49 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+    <servlet>
+        <servlet-name>albumController</servlet-name>
+        <servlet-class>com.example.controller.AlbumController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>albumController</servlet-name>
+        <url-pattern>/albums</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>artistController</servlet-name>
+        <servlet-class>com.example.controller.ArtistController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>artistController</servlet-name>
+        <url-pattern>/artists</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>trackController</servlet-name>
+        <servlet-class>com.example.controller.TrackController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>trackController</servlet-name>
+        <url-pattern>/tracks</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>statisticsController</servlet-name>
+        <servlet-class>com.example.controller.StatisticsController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>statisticsController</servlet-name>
+        <url-pattern>/statistics</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>apiController</servlet-name>
+        <servlet-class>com.example.controller.ApiController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>apiController</servlet-name>
+        <url-pattern>/api</url-pattern>
+    </servlet-mapping>
+</web-app>
